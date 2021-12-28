@@ -1,4 +1,4 @@
-package main;
+package br.com.alura.jdbc;
 
 import java.sql.SQLException;
 
