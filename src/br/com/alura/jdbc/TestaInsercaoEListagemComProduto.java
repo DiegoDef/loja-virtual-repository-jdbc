@@ -1,6 +1,7 @@
 package br.com.alura.jdbc;
 
 import br.com.alura.jdbc.dao.ProdutoDAO;
+import br.com.alura.jdbc.factory.ConnectionFactory;
 import br.com.alura.jdbc.modelo.Produto;
 
 import java.sql.*;
@@ -15,7 +16,7 @@ public class TestaInsercaoEListagemComProduto {
             ProdutoDAO produtoDao = new ProdutoDAO(connection);
             produtoDao.salvar(comoda);
             List<Produto> listaDeProdutos = produtoDao.listar();
-            listaDeProdutos.forEach(lp -> System.out.println(lp));
+            listaDeProdutos.forEach(System.out::println);
         }
     }
 }
