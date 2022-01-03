@@ -33,7 +33,7 @@ public class ProdutoDAO {
         }
     }
 
-    public List<Produto> listar() throws  SQLException {
+    public List<Produto> listar() throws SQLException {
         List<Produto> produtos = new ArrayList<>();
 
         String sql = "SELECT ID, NOME, DESCRICAO FROM PRODUTO";
